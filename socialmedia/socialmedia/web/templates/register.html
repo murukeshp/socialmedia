@@ -1,0 +1,268 @@
+{% comment %} <!-- <form action="" method="post">
+    {%csrf_token%}
+    {{form.as_p}}
+    <input type="submit" value="submit">
+</form> -->
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+	<!-- Website CSS style -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Website Font style -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+	<title>Admin</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row main">
+			<div class="main-login main-center">
+				<h5>Sign up </h5>
+				<form class="" method="post">
+				
+					{%csrf_token%}
+					<div class="form-group">
+						<label for="name" class="cols-sm-2 control-label">first_name</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+								<input type="text" class="form-control" name="first_name" id="id_name"
+									placeholder="Enter your Name" />
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="text" class="cols-sm-2 control-label">last_name</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-envelope fa"
+										aria-hidden="true"></i></span>
+								<input type="text" class="form-control" name="last_name" id="id_last_name"
+									placeholder="Enter your Email" />
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="email" class="cols-sm-2 control-label">email</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+								<input type="text" class="form-control" name="email" id="id_email"
+									placeholder="Enter your Username" />
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="text" class="cols-sm-2 control-label">username</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-lock fa-lg"
+										aria-hidden="true"></i></span>
+								<input type="text" class="form-control" name="username" id="id_username"
+									placeholder="Enter your Password" />
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-lock fa-lg"
+										aria-hidden="true"></i></span>
+								<input type="password" class="form-control" name="password1" id="id_password1"
+									placeholder="Confirm your Password" />
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-lock fa-lg"
+										aria-hidden="true"></i></span>
+								<input type="password" class="form-control" name="password2" id="id_password2"
+									placeholder="Confirm your Password" />
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group ">
+						<button   type="submit" value="register" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</button> 
+						 <!-- <button  class="btn-signup bg-light" type="submit" value="register">signup</button>  -->
+						 <a class="d-block text-center mt-2 small" href="{%url 'signin' %}">Have an account? Sign In</a>
+					
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html> {% endcomment %}
+
+
+
+
+<!-- <form action="" method="post">
+    {%csrf_token%}
+    {{form.as_p}}
+    <input type="submit" value="submit">
+</form> -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/web/static/css/registerstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <section class="h-100 h-custom" style="background-color: #3c3651">
+        <!-- <section class="vh-100 bg-image"
+        style="background-image: url('/images/reg.jpg');background-size: 100% 100%;"> -->
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-8 col-xl-6">
+              <div class="card rounded-3">
+                <!-- <img src="/images/sm.avif"
+            class="w-60" height="250" style="border-top-left-radius: .1rem; border-top-right-radius: .1rem;"
+            alt="Sample photo"> -->
+                <div class="card-body p-4 p-md-5">
+                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">REGISTER</p>
+      
+                  <form method="post" class="px-md-2" enctype="multipart/form-data">
+                  {%csrf_token%}
+      
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form3Example1q" class="form-control" placeholder="Enter firstname" name="first_name"/>
+                      <label class="form-label" for="form3Example1q"></label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <input type="text" id="form3Example1q" class="form-control" placeholder="Enter lastname" name="last_name"/>
+                        <label class="form-label" for="form3Example1q"></label>
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <input type="email" id="form3Example1q" class="form-control" placeholder="Enter email" name="email"/>
+                        <label class="form-label" for="form3Example1q"></label>
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <input type="text" id="form3Example1q" class="form-control" placeholder="Enter username" name="username"/>
+                        <label class="form-label" for="form3Example1q"></label>
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <input type="password" id="form3Example1q" class="form-control" placeholder="Enter password" name="password1"/>
+                        <label class="form-label" for="form3Example1q"></label>
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <input type="password" id="form3Example1q" class="form-control" placeholder="confirm password" name="password2"/>
+                        <label class="form-label" for="form3Example1q"></label>
+                      </div>
+      
+                    <!-- <div class="row">
+                      <div class="col-md-6 mb-4">
+      
+                        <div class="form-outline datepicker">
+                          <input type="text" class="form-control" id="exampleDatepicker1" />
+                          <label for="exampleDatepicker1" class="form-label">Select a date</label>
+                        </div>
+      
+                      </div> -->
+                      <!-- <div class="col-md-6 mb-4">
+      
+                        <select class="select">
+                          <option value="1" disabled>Gender</option>
+                          <option value="2">Female</option>
+                          <option value="3">Male</option>
+                          <option value="4">Other</option>
+                        </select>
+      
+                      </div>
+                    </div> -->
+      
+                    <!-- <div class="mb-4">
+      
+                      <select class="select">
+                        <option value="1" disabled>Class</option>
+                        <option value="2">Class 1</option>
+                        <option value="3">Class 2</option>
+                        <option value="4">Class 3</option>
+                      </select>
+      
+                    </div>
+       -->
+                    <!-- <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                      <div class="col-md-6">
+      
+                        <div class="form-outline">
+                          <input type="text" id="form3Example1w" class="form-control" />
+                          <label class="form-label" for="form3Example1w">Registration code</label>
+                        </div>
+      
+                      </div>
+                    </div> -->
+      
+                    <div class="d-grid">
+                        <button class="btn btn-success btn-login text-uppercase fw-bold" type="submit">SUBMIT</button>
+                      </div>
+
+                      <div class="form-check d-flex justify-content-center mb-5">
+                        <a class="d-block text-center mt-2 small" href="{%url 'signin' %}">Have an account? Sign In</a>
+  
+                      </div>
+      
+                  </form>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
